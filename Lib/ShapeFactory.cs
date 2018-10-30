@@ -9,7 +9,8 @@ namespace Lib
         {
             return new List<Shape>{
                 new Circle(3),
-                new Square(2)
+                new Square(2),
+                new Rectangle(4, 5)
             };
         }
     }
