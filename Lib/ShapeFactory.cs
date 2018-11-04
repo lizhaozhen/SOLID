@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace Lib
 {
-    public class ShapeFactory
+    public class ShapeFactory : IShapeFactory
     {
-        public List<Shape> CreateShapes()
+        public List<IShape> CreateShapes()
         {
-            return new List<Shape>{
+            return new List<IShape>{
                 new Circle(3),
                 new Square(2),
                 new Rectangle(4, 5)
