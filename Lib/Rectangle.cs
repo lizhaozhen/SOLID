@@ -2,9 +2,9 @@ using System;
 
 namespace Lib
 {
-    public class Rectangle : Shape
+    public class Rectangle : Shape, IRectangle
     {
-        public Rectangle(decimal width, decimal height)
+        public Rectangle(decimal width, decimal height, string name = "Rectangle") : base(name)
         {
             Width = width;
             Height = height;

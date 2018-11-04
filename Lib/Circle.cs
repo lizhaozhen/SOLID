@@ -2,9 +2,9 @@ using System;
 
 namespace Lib
 {
-    public class Circle : Shape
+    public class Circle : Shape, ICircle
     {
-        public Circle(decimal r)
+        public Circle(decimal r, string name = "Circle") : base(name)
         {
             Radius = r;
         }
